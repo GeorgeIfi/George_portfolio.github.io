@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>George Ifi — Data Engineer & Environmental Management</title>
+  <meta name="description" content="George Ifi | Data engineering for clean energy, sustainability and reliable decision-making. ETL • PostgreSQL • Spark • Cloud." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#60a5fa;
+      --glass:rgba(255,255,255,0.03);
+      --border:rgba(255,255,255,0.06);
+      --text-main:#e6eef8;
+      --text-dim:#9fb8d9;
+      --text-soft:#cfe6ff;
+      --max-width:1100px;
+      font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#071026 0%,#081428 100%);
+      color:var(--text-main);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:32px;
+    }
+
+    .wrap{width:100%;max-width:var(--max-width)}
+
+    .card{
+      background:var(--card);
+      border-radius:16px;
+      padding:28px;
+      box-shadow:0 18px 40px rgba(2,6,23,0.7);
+      display:grid;
+      grid-template-columns:340px 1fr;
+      gap:28px;
+      align-items:start;
+      border:1px solid var(--border);
+    }
+
+    .avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+    .avatar{width:280px;height:280px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);background:var(--glass);display:grid;place-items:center}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .badge{padding:6px 12px;border-radius:999px;background:rgba(255,255,255,0.04);font-size:13px;line-height:1.2;color:var(--text-soft);border:1px solid var(--border);font-weight:500}
+    .meta{font-size:13px;color:var(--text-dim);line-height:1.4}
+
+    h1{margin:0;font-size:28px;line-height:1.2;font-weight:600;color:var(--text-main)}
+    .role-line{margin-top:4px;font-size:15px;color:var(--accent);font-weight:500}
+    p.lead{margin:12px 0 20px;color:var(--text-soft);opacity:0.95;font-size:15px;line-height:1.5;max-width:60ch}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px;line-height:1.2;border:1px solid var(--border)}
+    .actions{margin-top:16px;display:flex;flex-wrap:wrap;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;background:var(--accent);color:#04233a;text-decoration:none;font-weight:600;font-size:14px;line-height:1.2;border:1px solid rgba(0,0,0,0.3)}
+    .btn.secondary{background:transparent;border:1px solid var(--border);color:var(--text-main)}
+    section h2, section h3{color:var(--text-main);font-weight:600}
+
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:12px}
+    .project-card{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px;border:1px solid var(--border)}
+    .project-head{display:flex;gap:12px;align-items:center}
+    .thumb{width:64px;height:64px;border-radius:8px;overflow:hidden;flex:0 0 64px;background:#071428;display:grid;place-items:center;border:1px solid var(--border)}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .project-title{margin:0 0 4px 0;font-size:16px;line-height:1.3;color:var(--text-main)}
+    .project-desc{font-size:13px;color:var(--text-soft);opacity:0.95;line-height:1.4}
+    .tech-tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+    .tag{font-size:12px;line-height:1.2;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid var(--border)}
+    .project-links{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+
+    footer{margin-top:24px;color:var(--text-dim);font-size:13px;line-height:1.4;max-width:65ch}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    @media (max-width:880px){.card{grid-template-columns:1fr;}.avatar{width:200px;height:200px}.avatar-wrap{flex-direction:row;gap:14px;text-align:left;align-items:flex-start}.meta{text-align:left}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" aria-labelledby="intro-heading">
+      <aside class="avatar-wrap">
+        <figure class="avatar">
+          <!-- ✅ Replace the src path below with your actual image path -->
+          <img src="assets/img/ifi-profile.jpg" alt="George Ifi headshot" loading="lazy" width="280" height="280">
+        </figure>
+        <div class="meta">
+          <div class="badge">M.Sc. Environmental Management • Data Engineer</div>
+          <div style="margin-top:8px">Based in London, UK · Open to remote & relocation</div>
+        </div>
+      </aside>
+
+      <section>
+        <h1 id="intro-heading">George Ifi</h1>
+        <div class="role-line">Data Engineering for Sustainable Energy & Clean Infrastructure</div>
+        <p class="lead">I build reliable data pipelines and analytics systems that help organisations make evidence‑based decisions about energy, land use, housing and environmental risk. I combine 5+ years of data engineering experience (ETL, PostgreSQL, Spark, Terraform, cloud) with an M.Sc. focus on environmental management and climate resilience.</p>
+
+        <div class="skills">
+          <div class="skill">Python</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Apache Spark</div>
+          <div class="skill">ETL / Orchestration</div>
+          <div class="skill">Airflow & Task Scheduler</div>
+          <div class="skill">Data Quality / Governance</div>
+          <div class="skill">Power BI / Dashboards</div>
+          <div class="skill">Terraform / AWS</div>
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn secondary" href="#contact">Contact</a>
+          <a class="btn secondary" href="CV_George_Ifi.pdf" download>Download CV</a>
+        </div>
+
+        <div style="margin-top:20px">
+          <h2 style="margin:0 0 8px 0;font-size:16px" id="about-heading">About me</h2>
+          <p style="margin:0;font-size:14px;line-height:1.5;color:var(--text-soft);max-width:65ch">I design, clean and automate data flows end‑to‑end — from API extraction and transformation to loading dimensional models in PostgreSQL for analytics. Recently, I built a property intelligence pipeline for a real‑estate client: automated API ingestion, cleaned messy listing data, created reporting tables, and published dashboards for pricing and agent performance. The workflow cut manual spreadsheet work and improved decision speed for the sales team.</p>
+        </div>
+
+        <footer>
+          <div>Helpful links for reviewers: GitHub repos for ETL pipelines, infrastructure-as-code (Terraform on AWS), and environmental analytics; plus recent research work on energy/sustainability. I am actively looking for roles / research assistantships in data engineering for clean energy, climate tech, or resilient infrastructure.</div>
+        </footer>
+      </section>
+    </section>
+
+    <section id="projects" style="margin-top:32px;color:var(--text-soft)">
+      <h2 style="margin:0 0 8px 0;font-size:20px">Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-head">
+            <div class="thumb"><img src="assets/img/project-etl-thumb.jpg" alt="ETL pipeline thumbnail"></div>
+            <div style="flex:1">
+              <h3 class="project-title">Real Estate Data Pipeline</h3>
+              <div class="project-desc">Automated property listing ingestion (API → cleaned tables → PostgreSQL star schema → dashboard). Replaced manual spreadsheets and enabled live pricing insights for agents.</div>
+              <div class="tech-tags"><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Pandas</span><span class="tag">Dimensional Modelling</span></div>
+            </div>
+          </div>
+          <div class="project-links"><a class="btn" href="https://github.com/yourusername/primesquare-pipeline" target="_blank">Repo</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:32px;color:var(--text-soft)">
+      <h2 style="margin:0 0 8px 0;font-size:20px">Get in touch</h2>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.5;color:var(--text-soft)">Email: <a href="mailto:ifi.george@example.com">ifi.george@example.com</a><br>GitHub: <a href="https://github.com/yourusername">@yourusername</a><br>LinkedIn: <a href="https://www.linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></p>
+    </section>
+  </main>
+</body>
+</html>
